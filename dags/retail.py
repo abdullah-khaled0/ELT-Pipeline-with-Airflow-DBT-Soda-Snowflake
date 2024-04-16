@@ -26,7 +26,7 @@ def retail():
         
         task_id='load_retail_to_snowflake',
         input_file = File(
-            path='https://raw.githubusercontent.com/abdullah0150/Files/main/online_retail.csv'
+            path='https://raw.githubusercontent.com/abdullah-khaled0/ELT-Pipeline-with-Airflow-DBT-Soda-Snowflake/main/include/dataset/online_retail.csv'
         ),
         output_table = Table(
             name='raw_invoices',
