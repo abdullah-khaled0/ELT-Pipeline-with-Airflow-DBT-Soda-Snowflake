@@ -1,0 +1,14 @@
+retail:
+ target: dev
+ outputs:
+  dev:
+    type: snowflake
+    account: wd94323.eu-central-2.aws
+    user: abdullah7aled
+    password: "@Abdullah0"
+    role: ACCOUNTADMIN
+    database: ASTRO_SDK_DB
+    warehouse: ASTRO_SDK_DW
+    schema: ASTRO_SDK_SCHEMA
+    threads: 1
+    client_session_keep_alive: False

@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: retail
+    database: ASTRO_SDK_DB
+    schema: ASTRO_SDK_SCHEMA
+    tables:
+      - name: raw_invoices
+      - name: country
