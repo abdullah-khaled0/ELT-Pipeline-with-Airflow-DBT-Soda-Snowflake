@@ -1,0 +1,19 @@
+data_source snowflake_db:
+  type: snowflake
+  connection:
+    username: ${SNOWFLAKE_USER}
+    password: "${SNOWFLAKE_PASSWORD}"
+    account: ${SNOWFLAKE_ACCOUNT}
+    database: ASTRO_SDK_DB
+    warehouse: ASTRO_SDK_DW
+    role: ACCOUNTADMIN
+    client_session_keep_alive: true
+    session_parameters:
+      QUERY_TAG: soda-queries
+      QUOTED_IDENTIFIER_IGNORE_CASE: false
+    schema: ASTRO_SDK_SCHEMA
+
+soda_cloud:
+  host: cloud.soda.io
+  api_key_id: 99ebd531-8221-403b-b168-1c7dfd9ec08e
+  api_key_secret: NouvrUtqfbPZTWOg4dX39Y6sfAJULlaYGh75gV58ysJgnxMtk5vPgw
